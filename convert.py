@@ -24,7 +24,7 @@ def main():
     try:
         targetFile = open("accounts.json", "w")
 
-        with open(sys.argv[1], "rU", encoding = "UTF-8") as sourceFile:
+        with open(sys.argv[1], "r", encoding = "UTF-8") as sourceFile:
             for line in sourceFile:
                 if line.find(":") != -1:
                     parts = line.split(":")
